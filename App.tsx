@@ -21,12 +21,13 @@
 
 import React from "react";
 import { NativeBaseProvider, Box } from "native-base";
+import { Cesta } from "./src/telas/Cesta";
 
 export default function App() {
   return (
     <NativeBaseProvider>
       <Box flex={1} alignItems={"center"} justifyContent={"center"}>
-        Hello world
+        <Cesta />
       </Box>
     </NativeBaseProvider>
   );
