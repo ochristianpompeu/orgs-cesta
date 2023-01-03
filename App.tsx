@@ -20,15 +20,18 @@
 // });
 
 import React from "react";
-import { NativeBaseProvider, Box } from "native-base";
+import { NativeBaseProvider, Box, View, StatusBar } from "native-base";
 import { Cesta } from "./src/telas/Cesta";
 
 export default function App() {
   return (
     <NativeBaseProvider>
-      <Box flex={1} alignItems={"center"} justifyContent={"center"}>
-        <Cesta />
-      </Box>
+      {/* <View alignItems={"center"} justifyContent={"center"}> */}
+        <Box flex={1} alignItems={"center"}>
+          <StatusBar />
+          <Cesta />
+        </Box>
+      {/* </View> */}
     </NativeBaseProvider>
   );
 }
