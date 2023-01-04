@@ -1,5 +1,5 @@
 import React from "react";
-import { Image } from "native-base";
+import { Image, Text } from "native-base";
 import { Dimensions } from "react-native";
 
 import imagemDeTopo from "../../../assets/images/topo.png";
@@ -14,6 +14,18 @@ function Cesta() {
         width={"100%"}
         height={(578 / 768) * width}
       />
+      <Text
+        position={"absolute"}
+        width={"full"}
+        textAlign={"center"}
+        lineHeight={26}
+        fontSize={16}
+        color={"white"}
+        fontWeight={"bold"}
+        padding={"4"}
+      >
+        Detalhe da Cesta
+      </Text>
     </>
   );
 }
