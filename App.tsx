@@ -27,10 +27,10 @@ export default function App() {
   return (
     <NativeBaseProvider>
       {/* <View alignItems={"center"} justifyContent={"center"}> */}
-        <Box flex={1} alignItems={"center"}>
-          <StatusBar />
-          <Cesta />
-        </Box>
+      <Box flex={1} safeArea >
+        <StatusBar />
+        <Cesta />
+      </Box>
       {/* </View> */}
     </NativeBaseProvider>
   );
