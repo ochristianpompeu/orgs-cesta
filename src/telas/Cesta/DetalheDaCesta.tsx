@@ -3,12 +3,15 @@ import { Box, Heading, HStack, Image, Stack, Text, VStack } from "native-base";
 
 import logoDaFazenda from "../../../assets/images/logo.png";
 
-
 function DetalheDaCesta() {
   return (
     <Box paddingY={"2"} paddingX={"4"}>
       <Stack direction={"column"} space={"2"}>
-        <Heading fontSize={"3xl"} color={"teal.900"}>
+        <Heading
+          // fontFamily={"Montserrat_700Bold"}
+          fontSize={"3xl"}
+          color={"teal.900"}
+        >
           Nome da Cesta
         </Heading>
         <HStack space={"2"} justifyContent={"flex-start"} alignItems={"center"}>
@@ -21,7 +24,12 @@ function DetalheDaCesta() {
             alt="Imagem da fazenda"
             size={"xs"}
           />
-          <Heading lineHeight={"lg"} fontSize={"lg"} color={"teal.700"}>
+          <Heading
+            // fontFamily={"Montserrat_400Regular"}
+            lineHeight={"lg"}
+            fontSize={"lg"}
+            color={"teal.700"}
+          >
             Nome da Fazenda
           </Heading>
         </HStack>

@@ -22,16 +22,27 @@
 import React from "react";
 import { NativeBaseProvider, Box, View, StatusBar } from "native-base";
 import { Cesta } from "./src/telas/Cesta";
+import {
+  useFonts,
+  Montserrat_400Regular,
+  Montserrat_700Bold,
+} from "@expo-google-fonts/montserrat";
 
 export default function App() {
+  // const [fontsLoaded] = useFonts({
+  //   Montserrat_400Regular,
+  //   Montserrat_700Bold,
+  // });
+
+  // if (!fontsLoaded) {
+  //   return <View/>;
+  // }
   return (
     <NativeBaseProvider>
-      {/* <View alignItems={"center"} justifyContent={"center"}> */}
-      <Box flex={1} safeArea >
+      <Box flex={1} safeArea>
         <StatusBar />
         <Cesta />
       </Box>
-      {/* </View> */}
     </NativeBaseProvider>
   );
 }
