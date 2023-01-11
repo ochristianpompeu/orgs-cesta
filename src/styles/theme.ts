@@ -1,7 +1,5 @@
 import { extendTheme } from "native-base";
-import {
-
-} from "@expo-google-fonts/montserrat";
+import {} from "@expo-google-fonts/montserrat";
 
 const theme = extendTheme({
   fontConfig: {
@@ -45,3 +43,5 @@ const theme = extendTheme({
     },
   },
 });
+
+export { theme };
